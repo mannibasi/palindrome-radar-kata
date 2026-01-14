@@ -15,3 +15,12 @@ describe("Palindrome Tests", () => {
     expect(isPalindrome(input)).toBe(true);
   });
 });
+
+describe("Non Palindrome Tests", () => {
+  it.each(["race car1", "axDbTbd6", "Hello, World!"])(
+    "Should return false for invalid palindrome input: %s",
+    (input: string) => {
+      expect(isPalindrome(input)).toBe(false);
+    }
+  );
+});
