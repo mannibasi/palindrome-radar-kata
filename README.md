@@ -22,5 +22,5 @@ Ignore capital letters, punctuation, and word dividers. Any character other than
 5. "Race car" => True
 6. "A man, a plan, a canal, Panama!" => True
 7. "axDbTbd6" => False
-8. "6axDbTbd6" => True
+8. "6axDbTbdxa6" => True
 9. "Hello, World!" => False

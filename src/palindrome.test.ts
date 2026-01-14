@@ -10,7 +10,8 @@ describe("Palindrome Tests", () => {
     "pop.",
     "lol;",
     "A man, a plan, a canal, Panama!",
-    "Race car"
+    "Race car",
+    "6axDbTbdxa6"
   ])("Should return true for valid palindrome input: %s", (input: string) => {
     expect(isPalindrome(input)).toBe(true);
   });
