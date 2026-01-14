@@ -1,3 +1,4 @@
 export function isPalindrome(input: string): boolean {
-  return input === "wow" || input === "pop" || input === "lol";
+  const reversedInput: string = input.split("").reverse().join("");
+  return input === reversedInput;
 }
