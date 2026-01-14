@@ -1,7 +1,5 @@
 export function isPalindrome(input: string): boolean {
-  if (input === "anna!" || input === "pop." || input === "lol;") {
-    return true;
-  }
-  const reversedInput: string = input.split("").reverse().join("");
-  return input === reversedInput;
+  const sanitisedInput: string = input.replace(/[^a-z0-9]/gi, "").toLowerCase();
+  const reversedInput: string = sanitisedInput.split("").reverse().join("");
+  return sanitisedInput === reversedInput;
 }
